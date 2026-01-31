@@ -168,19 +168,46 @@ li{margin:6px 0}
   text-align:center;
   letter-spacing:0.6px;
 }
+
+/* === CANONICAL PROXUMA BUTTON === */
+.canonical-anchor{
+  position:absolute;
+  top:14px;
+  left:16px;
+  z-index:20;
+}
+.canonical-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:999px;
+  border:1.5px solid var(--accent);
+  color:var(--accent);
+  background:transparent;
+  text-decoration:none;
+  letter-spacing:.35px;
+  transition:background .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.canonical-btn:hover{
+  background:rgba(0,255,102,0.08);
+  box-shadow:0 0 8px rgba(0,255,102,0.4);
+  transform:translateY(-1px);
+}
+
 </style>
 </head>
 
 <body class="dark">
 <div class="container">
-  <a href="https://scar197124.github.io/PROXUMA/" style="
-    display:inline-block;
-    margin-bottom:14px;
-    font-size:13px;
-    color:var(--muted);
-    text-decoration:none;">
-    ← Proxuma
+  
+<div class="canonical-anchor">
+  <a href="https://scar197124.github.io/PROXUMA/" class="canonical-btn">
+    Proxuma
   </a>
+</div>
+
 
   <div class="title">Proxuma Sense</div>
   <div class="subtitle">Perception before classification</div>
