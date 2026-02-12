@@ -5,11 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Proxuma Sense</title>
 <style>
-:root{
-  --neon:#00ff66;
-}
+:root{ --neon:#00ff66; }
 
-/* ===== DARK (NEON) THEME ===== */
 body.dark{
   --bg:#0b0f0d;
   --panel:#111815;
@@ -18,7 +15,6 @@ body.dark{
   --accent:var(--neon);
 }
 
-/* ===== LIGHT (WHITE) THEME ===== */
 body.light{
   --bg:#ffffff;
   --panel:#f5f5f5;
@@ -46,10 +42,9 @@ body{
   border-radius:14px;
   max-width:720px;
   width:100%;
-  padding:44px 46px 40px;
+  padding:34px 42px 36px;
 }
 
-/* Header */
 .title{
   font-size:44px;
   font-weight:700;
@@ -64,7 +59,32 @@ body{
   letter-spacing:1.5px;
 }
 
-/* Theme toggle block */
+.canonical-wrap{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.canonical-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:999px;
+  border:1.5px solid var(--accent);
+  color:var(--accent);
+  background:transparent;
+  text-decoration:none;
+  letter-spacing:.35px;
+  transition:background .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+
+.canonical-btn:hover{
+  background:rgba(0,255,102,0.08);
+  box-shadow:0 0 8px rgba(0,255,102,0.4);
+  transform:translateY(-1px);
+}
+
 .themeRow{
   margin-top:14px;
   display:flex;
@@ -115,7 +135,6 @@ input:checked + .slider:before{
   background:var(--accent);
 }
 
-/* Form */
 label{font-size:14px;color:var(--muted)}
 input[type=text]{
   width:100%;
@@ -141,7 +160,6 @@ button{
 }
 button:hover{opacity:0.85}
 
-/* Result */
 .result{
   display:none;
   margin-top:18px;
@@ -168,46 +186,15 @@ li{margin:6px 0}
   text-align:center;
   letter-spacing:0.6px;
 }
-
-/* === CANONICAL PROXUMA BUTTON === */
-.canonical-anchor{
-  position:absolute;
-  top:14px;
-  left:16px;
-  z-index:20;
-}
-.canonical-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:6px 14px;
-  font-size:12px;
-  border-radius:999px;
-  border:1.5px solid var(--accent);
-  color:var(--accent);
-  background:transparent;
-  text-decoration:none;
-  letter-spacing:.35px;
-  transition:background .15s ease, box-shadow .15s ease, transform .15s ease;
-}
-.canonical-btn:hover{
-  background:rgba(0,255,102,0.08);
-  box-shadow:0 0 8px rgba(0,255,102,0.4);
-  transform:translateY(-1px);
-}
-
 </style>
 </head>
 
 <body class="dark">
 <div class="container">
-  
-<div class="canonical-anchor">
-  <a href="https://scar197124.github.io/PROXUMA/" class="canonical-btn">
-    Proxuma
-  </a>
-</div>
 
+  <div class="canonical-wrap">
+    <a href="index.html" class="canonical-btn">Proxuma</a>
+  </div>
 
   <div class="title">Proxuma Sense</div>
   <div class="subtitle">Perception before classification</div>
